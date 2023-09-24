@@ -1,0 +1,220 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Mona Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+#main{
+    height: 100%;
+    width: 100%;
+    background-color: #D0D4D5;
+}
+
+.nav{
+    height: 90px;
+    width: 100%;
+    padding: 24px 75px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav img{
+    height: 120px;
+    margin-right: 200px;
+}
+
+.nav .nav-part1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav .nav-part1 h4{
+    margin-right: 60px;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.nav .nav-part2{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 60px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+/* .nav .nav-part2 i{
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: 600;
+} */
+
+#content{
+    width: 100%;
+    /* margin-top: 40px; */
+    height: calc(100% - 100px);
+    display: flex;
+    padding: 40px 0;
+}
+
+#content .left{
+    height: 100%;
+    width: 45%;
+    padding: 70px 140px;
+    padding-right: 0px;
+}
+
+.left h5{
+    font-size: 15px;
+    color: #60615F;
+    margin-bottom: 20px;
+    margin-left: 2px;
+}
+
+.left h1{
+    font-size: 50px;
+    margin-bottom: 34px;
+    text-transform: uppercase;
+    line-height: 55px;
+    width: 75%;
+}
+
+.left p{
+    margin-bottom: 45px;
+    font-size: 14px;
+    width: 75%;
+}
+
+.left button{
+    background-color: #000;
+    color: #fff;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 600;
+    padding: 18px 42px;
+    border: none;
+    border-radius: 50px;
+    border-top-left-radius: 0;
+    cursor: pointer;
+    transition: all ease 0.2s;
+}
+
+.left button:hover{
+    background-color: #000000e4;
+}
+
+#content .right{
+    height: 100%;
+    width: 55%;
+    position: relative;
+    padding: 35px 15px 15px 0px;
+    /* display: flex;
+    gap: 50px; */
+    white-space: nowrap;
+    overflow-x: auto;
+}
+
+#content .right::-webkit-scrollbar{
+    display: none;
+}
+
+
+.right .elem{
+    height: 400px;
+    width: 280px;
+    background-color: #F6F6F6;
+    position: relative;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    display: inline-block;
+    margin-right: 18px;
+    transition: all 1s;
+}
+
+.right .elem img{
+    height: 40%;
+    /* width: 90%; */
+    top: 25%;
+    left: 5%;
+    object-fit: cover;
+    /* background-position: center; */
+    position: absolute;
+    transition: all ease 0.3s;
+}
+
+.right .elem .second-img{
+    height: 43%;
+    /* width: 90%; */
+    top: 25%;
+    left: 2%;
+    object-fit: cover;
+    /* background-position: center; */
+    position: absolute;
+}
+
+.right .elem .third-img{
+    height: 62%;
+    /* width: 90%; */
+    top: 17%;
+    left: 5%;
+    object-fit: cover;
+    /* background-position: center; */
+    position: absolute;
+}
+
+.right .elem .fourth-img{
+    height: 68%;
+    /* width: 90%; */
+    top: 1%;
+    left: 2%;
+    object-fit: cover;
+    /* background-position: center; */
+    position: absolute;
+}
+
+.right .elem .fifth-img{
+    height: 67%;
+    /* width: 90%; */
+    top: 10%;
+    left: -0.3rem;
+    object-fit: cover;
+    background-position: center;
+    position: absolute;
+}
+
+.right .elem img:hover{
+    transform: scale(1.1);
+}
+
+.right .elem h4{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: #D0D4D5;
+    color: #404040;
+    font-size: 13px;
+    font-weight: 700;
+    padding: 17px 34px;
+    border-radius: 7px;
+}
+
+.right .elem h5{
+    position: absolute;
+    bottom: 10%;
+    right: 0;
+    background-color: #000612;
+    color: #d1d1d1;
+    font-size: 13px;
+    padding: 15px 18px;
+    border-radius: 7px;
+    border-bottom-right-radius: 0px;
+}
